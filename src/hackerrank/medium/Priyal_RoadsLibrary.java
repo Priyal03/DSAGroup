@@ -9,7 +9,14 @@ public class Priyal_RoadsLibrary {
 	private static boolean[] visited;
 	private static int count;
 	static ArrayList<Integer> adjlist[];
-
+/**
+ * 
+ * the trick here is to create adj matrix or list correctly and then traverse it with DFS.
+ * Other way could be find sub graphs and then calucate cost of each.
+ * 
+ * TC : O(E+(ncity*E))
+ * SC : O((ncity*E)+ncity)
+ */
 	static long roadsAndLibraries(int ncity, int clib, int croad, int[][] cities) {
 
 		int n = ncity + 1;
