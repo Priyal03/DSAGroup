@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Stack;
 
 public class Priyal_3Sum {
 	static List<List<Integer>> res = new ArrayList<List<Integer>>();
@@ -13,18 +14,29 @@ public class Priyal_3Sum {
 		// TODO Auto-generated method stub
 
 		int num[] = { 3, 0, -2, -1, 1, 2 };
-		List<List<Integer>> res = threeSumMy(num);
-
-		Iterator<List<Integer>> it = res.iterator();
-
-		String name = "eat";
-
-		Arrays.sort(name.toCharArray());
-
-		while (it.hasNext()) {
-
-			System.out.println(it.next());
-		}
+		
+		byte a[]= {65,66,67,68,69,70};
+		
+		byte b[]= {71,72,73,74,75,76};
+		
+		System.arraycopy(a, 2, b, 1, a.length-3);//(a, b, a.length);
+		
+		System.out.println(new String(a)+"  "+new String(b));
+//		List<List<Integer>> res = threeSumMy(num);
+//
+//		Iterator<List<Integer>> it = res.iterator();
+//		
+//		Stack<Integer> s= new Stack<Integer>();
+//		
+//s.push(10);
+//		String name = "eat";
+//
+//		Arrays.sort(name.toCharArray());
+//
+//		while (it.hasNext()) {
+//
+//			System.out.println(it.next());
+//		}
 	}
 
 	
